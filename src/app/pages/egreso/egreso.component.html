@@ -1,6 +1,6 @@
-<div class="egreso">
+<div class="egreso position-relative overflow-hidden text-center mb-5">
     <h2 class="egreso_titulo">Egresos</h2>
-        <div class="elemento limpiarEstilos" *ngFor="let egreso of egresos">
+        <div class="position-relative elemento text-center limpiarEstilos" *ngFor="let egreso of egresos">
             <div class="elemento_descripcion">{{egreso.descripcion}}</div>
             <div class="right limpiarEstilos">
                 <div class="elemento_valor">- {{egreso.valor | currency:'NIO':'C$':'1.2-2'}}</div>

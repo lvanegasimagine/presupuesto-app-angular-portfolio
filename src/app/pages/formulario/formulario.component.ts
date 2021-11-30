@@ -27,8 +27,15 @@ export class FormularioComponent implements OnInit {
   agregarValor(){
     if(this.tipo === 'ingresoOperacion'){
       this.ingresoService.ingresos.push(new Ingreso(this.descripcionInput, this.valorInput));
+      this.limpiarInput();
     }else{
       this.egresoService.egresos.push(new Egreso(this.descripcionInput, this.valorInput));
+      this.limpiarInput();
     }
+  }
+
+  limpiarInput(){
+    this.descripcionInput = '';
+    this.valorInput = 0;
   }
 }

@@ -29,8 +29,8 @@ body {
     background-position: center;
     position: relative;
     width: 100%;
-    padding-top: 150px;
-    padding-bottom: 100px;
+    /* padding-top: 150px; */
+    /* padding-bottom: 100px; */
     color: #fff;
     background: url(assets/bg-pattern.png), #7b4397;
     background: url(assets/bg-pattern.png), -webkit-gradient(linear, right top, left top, from(#7b4397), to(#dc2430));
@@ -63,7 +63,7 @@ body {
 
 .presupuesto_ingreso,
 .presupuesto_egreso {
-    padding: 12px;
+    padding: 16px;
     text-transform: uppercase;
 }
 
@@ -79,8 +79,8 @@ body {
 .presupuesto_ingreso--texto,
 .presupuesto_egreso--text {
     float: left;
-    font-size: 13px;
-    color: #444;
+    font-size: 20px;
+    color: white;
     margin-top: 2px;
 }
 
@@ -88,6 +88,9 @@ body {
 .presupuesto_egreso--valor {
     letter-spacing: 1px;
     float: left;
+    font-size: 20px;
+    color: white;
+    margin-top: 2px;
 }
 
 .presupuesto_ingreso--porcentaje,
@@ -175,13 +178,13 @@ body {
 
 .ingreso {
     float: left;
-    width: 475px;
+    width: 100%;
     margin-right: 50px;
 }
 
 .egreso {
     float: left;
-    width: 475px;
+    width: 100%;
 }
 
 h2 {

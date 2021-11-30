@@ -1,13 +1,19 @@
-<form (ngSubmit)="f.form.valid && agregarValor()" #f="ngForm">
-    <div class="agregar">
-        <div class="agregar_contenedor">
-            <select (change)="tipoOperacion($event)" class="agregar_tipo" [ngClass]="{redfocus: tipo === 'egresoOperacion'}">
-                <option value="ingresoOperacion" selected>+</option>
-                <option value="egresoOperacion">-</option>
-            </select>
-            <input [ngClass]="{redfocus: tipo === 'egresoOperacion'}" type="text" class="agregar_descripcion" placeholder="Agregar Descripción" name="descripcionInput" [(ngModel)]="descripcionInput" required>
-            <input [ngClass]="{redfocus: tipo === 'egresoOperacion'}" type="number" class="agregar_valor" placeholder="Valor" name="valorInput" [(ngModel)]="valorInput" required>
-            <button type="submit" class="agregar_btn" > <i [ngClass]="{red: tipo === 'egresoOperacion'}" class="ion-ios-checkmark-outline"></i> </button>
+<div class="position-relative overflow-hidden text-center mt-2">
+    <div class="col-md-12">
+        <div class="container-fluid text-md-center">
+            <form (ngSubmit)="f.form.valid && agregarValor()" #f="ngForm">
+                <div class="agregar">
+                    <div class="position-relative text-center input-group mb-3">
+                        <select (change)="tipoOperacion($event)" class="agregar_tipo" [ngClass]="{redfocus: tipo === 'egresoOperacion'}">
+                            <option value="ingresoOperacion" selected>+</option>
+                        <option value="egresoOperacion">-</option>
+                        </select>
+                        <input type="text" [ngClass]="{redfocus: tipo === 'egresoOperacion'}" class="form-control" placeholder="Agregar Descripción" name="descripcionInput" [(ngModel)]="descripcionInput" required>
+                        <input type="number" [ngClass]="{redfocus: tipo === 'egresoOperacion'}" class="form-control" style="margin-left: 5px;" placeholder="Valor" name="valorInput" [(ngModel)]="valorInput" required>
+                        <button type="submit" class="agregar_btn" > <i [ngClass]="{red: tipo === 'egresoOperacion'}" class="ion-ios-checkmark-outline" style="margin-left: 5px;"></i> </button>
+                      </div>
+                </div>
+            </form>
         </div>
     </div>
-</form>
+</div>
