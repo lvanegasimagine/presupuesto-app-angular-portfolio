@@ -10,7 +10,8 @@
                         </select>
                         <input type="text" [ngClass]="{redfocus: tipo === 'egresoOperacion'}" class="form-control" placeholder="Agregar Descripción" name="descripcionInput" [(ngModel)]="descripcionInput" required>
                         <input type="number" [ngClass]="{redfocus: tipo === 'egresoOperacion'}" class="form-control" style="margin-left: 5px;" placeholder="Valor" name="valorInput" [(ngModel)]="valorInput" required>
-                        <button type="submit" class="agregar_btn" > <i [ngClass]="{red: tipo === 'egresoOperacion'}" class="ion-ios-checkmark-outline" style="margin-left: 5px;"></i> </button>
+                        <!-- <button type="submit" class="agregar_btn"> <i [ngClass]="{red: tipo === 'egresoOperacion'}" class="ion-ios-checkmark-outline" style="margin-left: 5px;"></i> </button> -->
+                        <button type="submit" class="agregar_btn"> <i [ngClass]="{red: tipo === 'egresoOperacion'}" class="fas fa-check" style="margin-left: 5px; font-size: 25px;"></i> </button>
                       </div>
                 </div>
             </form>
